@@ -1,4 +1,3 @@
-package Ex04;
 
 import java.util.Scanner;
 
@@ -11,11 +10,11 @@ public class Main {
 		Elevador elevador = new Elevador();
 		
 		System.out.println("\n ***** Elevador *****");
-		System.out.println("\n\n O PrÈdio possui " + Elevador.QUANTIDADE_ANDAR + " andares");
+		System.out.println("\n\n O Pr√©dio possui " + Elevador.QUANTIDADE_ANDAR + " andares");
 		
-		System.out.print("\n Defina a capacidade m·xima de pessoas no elevador: ");
+		System.out.print("\n Defina a capacidade m√°xima de pessoas no elevador: ");
 		int capacidade = ler.nextInt();
-		System.out.print("\n Defina o andar onde o elevador est·: ");
+		System.out.print("\n Defina o andar onde o elevador est√°: ");
 		int andar = ler.nextInt();
 		elevador.Inicializar(capacidade, andar);
 		
