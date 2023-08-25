@@ -1,4 +1,3 @@
-package Ex04;
 
 public class Elevador {
 
@@ -18,7 +17,7 @@ public class Elevador {
 			ocupacaoAtual++;
 			System.out.println("\n Pessoas no elevador: " + ocupacaoAtual);
 		}else {
-			System.out.println("\n O elevador j· atingiu sua capacidade M·xima");
+			System.out.println("\n O elevador j√° atingiu sua capacidade M√°xima");
 		}
 	}
 	
@@ -27,16 +26,16 @@ public class Elevador {
 			ocupacaoAtual --;
 			System.out.println("\n Pessoas no elevador: " + ocupacaoAtual);
 		}else {
-			System.out.println("\n N„o h· pessoas no elevador");
+			System.out.println("\n N√£o h√° pessoas no elevador");
 		}
 	}
 	
 	public void Subir() {
 		if(andarAtual < QUANTIDADE_ANDAR) {
 			andarAtual++;
-			System.out.println("\n O elevador est· no andar " + andarAtual);
+			System.out.println("\n O elevador est√° no andar " + andarAtual);
 		}else {
-			System.out.println("\n O elevador j· alcanÁou o ˙ltimo andar");
+			System.out.println("\n O elevador j√° alcan√ßou o √∫ltimo andar");
 		}
 	}
 	
@@ -44,12 +43,12 @@ public class Elevador {
 		if(andarAtual > 0) {
 			andarAtual--;
 			if(andarAtual != 0) {
-				System.out.println("\n O elevador est· no andar " + andarAtual);
+				System.out.println("\n O elevador est√° no andar " + andarAtual);
 			}else {
-				System.out.println("\n O elevador est· no TÈrreo");
+				System.out.println("\n O elevador est√° no T√©rreo");
 			}
 		}else {
-			System.out.println("\n O elevador j· alcanÁou o tÈrreo");
+			System.out.println("\n O elevador j√° alcan√ßou o t√©rreo");
 		}
 	}
 }
