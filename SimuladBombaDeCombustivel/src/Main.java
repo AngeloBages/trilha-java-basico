@@ -1,4 +1,3 @@
-package Ex03;
 
 import java.util.Scanner;
 
@@ -12,10 +11,10 @@ public class Main {
 		
 		do {
 			
-			System.out.println("\n ***** Bomba de Combustível *****");
+			System.out.println("\n ***** Bomba de CombustÃ­vel *****");
 			System.out.print("\n [1] - Abastecer por Valor \n [2] - Abastecer por Litro");
-			System.out.print("\n [3] - Alterar valor do Combustível \n [4] - Alterar tipo de Combustível");
-			System.out.println("\n [5] - Alterar quantidade de Combustível");
+			System.out.print("\n [3] - Alterar valor do CombustÃ­vel \n [4] - Alterar tipo de CombustÃ­vel");
+			System.out.println("\n [5] - Alterar quantidade de CombustÃ­vel");
 			
 			int opt = ler.nextInt();
 			
@@ -26,7 +25,7 @@ public class Main {
 			case 1:
 				System.out.print("\n Digiter o Valor a ser pago: ");
 				double litro1 = bomba.abastecerPorValor(ler.nextInt());
-				System.out.println("\n Você reabasteceu " + litro1 + "L");
+				System.out.println("\n VocÃª reabasteceu " + litro1 + "L");
 				bomba.quantidade -= litro1;
 				break;
 				
@@ -39,22 +38,22 @@ public class Main {
 				break;
 				
 			case 3:
-				System.out.println("\n Informe o novo valor do Combustível: ");
+				System.out.println("\n Informe o novo valor do CombustÃ­vel: ");
 				bomba.alterarValor(ler.nextInt());
 				break;
 				
 			case 4:
-				System.out.println("\n Informe o novo tipo de Combustível: ");
+				System.out.println("\n Informe o novo tipo de CombustÃ­vel: ");
 				bomba.alterarTipoCombustivel(ler.nextLine());
 				break;
 				
 			case 5:
-				System.out.println("\n Informe a nova quantidade de Combustível: ");
+				System.out.println("\n Informe a nova quantidade de CombustÃ­vel: ");
 				bomba.alterarQuantidade(ler.nextInt());
 			}
 			
 		}while(bomba.quantidade > 0);
 		
-		System.out.println("\n A quantidade de Combustível acabou");
+		System.out.println("\n A quantidade de CombustÃ­vel acabou");
 	}
 }
