@@ -1,4 +1,3 @@
-package t03;
 
 import java.util.Scanner;
 
@@ -16,25 +15,25 @@ public class Central {
 			
 			System.out.println("\n\n LISTA DE TAREFAS");
 			System.out.print("\n [1]-Adicionar Tarefa\n [2]-Remover Tarefa");
-			System.out.print("\n [3]-Obter Total de Tarefas\n [4]-Obter Descrições");
+			System.out.print("\n [3]-Obter Total de Tarefas\n [4]-Obter DescriÃ§Ãµes");
 			System.out.print("\n [5]-Sair\n ");
 			opt = ler.nextInt();
 			
 			switch(opt){
 				
 				case 1:
-					System.out.print("\n\n Digite a descrição da tarefa a ser adicionada:\n ");
+					System.out.print("\n\n Digite a descriÃ§Ã£o da tarefa a ser adicionada:\n ");
 					lista.adicionarTarefa(ler.next());
 					break;
 				case 2:
-					System.out.print("\n\n Digite a descrição da tarefa a ser removida: \n ");
+					System.out.print("\n\n Digite a descriÃ§Ã£o da tarefa a ser removida: \n ");
 					lista.removerTarefa(ler.next());
 					break;
 				case 3:
 					System.out.print("\n\n Total de tarefas: " + lista.obterTotal());
 					break;
 				case 4:
-					System.out.print("\n\n Descrições:");
+					System.out.print("\n\n DescriÃ§Ãµes:");
 					int i = 1;
 					for(String descricoes: lista.listaDescricoes) {
 						System.out.printf("\n Tarefa %s: %s",i,descricoes);
