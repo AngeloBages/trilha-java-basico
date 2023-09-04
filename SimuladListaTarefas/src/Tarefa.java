@@ -1,5 +1,3 @@
-package t03;
-
 public class Tarefa {
 
 	private String descricao;
